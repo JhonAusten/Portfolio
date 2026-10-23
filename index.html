@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jhon Austen G. Cabornay | Back-end Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Jhon Austen G. Cabornay, a BSIT student and aspiring back-end developer working with Python and Django.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="brand" href="#home">Jhon Austen</a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav" class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm Jhon Austen.</h1>
+        <p class="lead">I'm a BSIT student learning back-end development with Python and Django. I also like gaming and making small games.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <div class="terminal" aria-label="Short summary of me">
+        <div class="terminal-bar"><i></i><i></i><i></i><span>about-me.txt</span></div>
+        <pre id="typed" data-lines='[
+"name:      Jhon Austen G. Cabornay",
+"studying:  BSIT, Cebu Eastern College",
+"focus:     back-end (Python, Django)",
+"also:      game dev (Godot, RPG Maker)",
+"goal:      become a back-end developer"
+]'></pre>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <img class="avatar" src="images/profile.jpg" alt="Photo of Jhon Austen" width="220" height="220"
+             onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'avatar ph',textContent:'Add images/profile.jpg'}))">
+        <div class="prose">
+          <p>I'm an undergraduate BSIT student at Cebu Eastern College Incorporated. I like gaming, and that interest is what first got me into programming.</p>
+          <p>I'm an aspiring back-end developer. I'm comfortable building Django web apps with user accounts, database models, and an admin panel, and I'm still building up my Python skills. I also make small games, including one in RPG Maker MV, and I'm learning Godot.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <p class="note">An honest look at where I am right now. I also work with JavaScript, HTML, CSS, Git and GitHub, and RPG Maker MV.</p>
+      <div class="skills">
+        <div class="skill">
+          <div class="skill-head"><span>Django</span><span>Comfortable</span></div>
+          <div class="bar" role="img" aria-label="Django: Comfortable"><b style="width:60%"></b></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Python</span><span>Beginner</span></div>
+          <div class="bar" role="img" aria-label="Python: Beginner"><b style="width:30%"></b></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Godot</span><span>Beginner</span></div>
+          <div class="bar" role="img" aria-label="Godot: Beginner"><b style="width:30%"></b></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span>Game design</span><span>Beginner</span></div>
+          <div class="bar" role="img" aria-label="Game design: Beginner"><b style="width:30%"></b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <p class="note">Back-end work first, then games and practice projects.</p>
+      <div class="projects">
+        <article class="project">
+          <img src="images/project-2.png" alt="Screenshot of Gamio (Django)" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot ph',textContent:'Add images/project-2.png'}))">
+          <div class="project-body">
+            <h3>Gamio (Django)</h3>
+            <p>A Django web app for teachers. It has sign-up and sign-in, a database of students and quizzes, lesson file uploads, scores and leaderboards, and a Django admin panel. Each teacher only sees their own data.</p>
+            <p class="contrib"><strong>My contribution:</strong> Back-end in Python (Django). Claude AI helped me map out how the entities relate and how the API calls work.</p>
+            <p class="tools">Python, Django, database models, authentication, Django admin</p>
+            <a class="link" href="https://github.com/JhonAusten/gamio_build" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-5.png" alt="Screenshot of Random quotes generator" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot ph',textContent:'Add images/project-5.png'}))">
+          <div class="project-body">
+            <h3>Random quotes generator</h3>
+            <p>A web app that shows a random motivational quote when you click a button or press the spacebar.</p>
+            <p class="contrib"><strong>My contribution:</strong> JavaScript, working with a quotes data file</p>
+            <p class="tools">HTML, CSS, JavaScript</p>
+            <a class="link" href="https://jhonausten.github.io/SIA-API-project/" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-4.png" alt="Screenshot of Car racing game" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot ph',textContent:'Add images/project-4.png'}))">
+          <div class="project-body">
+            <h3>Car racing game</h3>
+            <p>A simple car racing game that runs in the browser and keeps a score.</p>
+            <p class="contrib"><strong>My contribution:</strong> I built it myself. HTML, JavaScript</p>
+            <p class="tools">HTML, JavaScript (canvas)</p>
+            <a class="link" href="https://jhonausten.github.io/carts/" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-3.jpg" alt="Screenshot of Manananggal Slayer" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot ph',textContent:'Add images/project-3.png'}))">
+          <div class="project-body">
+            <h3>Manananggal Slayer</h3>
+            <p>A Filipino horror browser game where you survive the attack of the Manananggal.</p>
+            <p class="contrib"><strong>My contribution:</strong> Back-end, JavaScript Sprite Animation</p>
+            <p class="tools">JavaScript, HTML, CSS</p>
+            <a class="link" href="https://jhonausten.github.io/manananggal/" target="_blank" rel="noopener">View on GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project-1.png" alt="Screenshot of RPG Maker MV game (in progress)" loading="lazy"
+               onerror="this.replaceWith(Object.assign(document.createElement('div'),{className:'shot ph',textContent:'Add images/project-1.png'}))">
+          <div class="project-body">
+            <h3>RPG Maker MV game (in progress)</h3>
+            <p>A role-playing game I am making with RPG Maker MV. The screenshot is the world map, with several islands to explore.</p>
+            <p class="contrib"><strong>My contribution:</strong> I am building it myself. I'm currently working on the storyline.</p>
+            <p class="tools">RPG Maker MV</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <h2>Contact</h2>
+      <p class="lead">I'm happy to hear from classmates, teachers, and anyone who wants to talk about my work.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:hamdellcrane@gmail.com">Email me</a>
+        <a class="btn" href="https://github.com/JhonAusten" target="_blank" rel="noopener">GitHub profile</a>
+        <a class="btn" href="assets/resume.pdf" download>Download resume</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Jhon Austen G. Cabornay. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
